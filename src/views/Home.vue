@@ -15,14 +15,17 @@
       </div>
     </div>
   </section>
+  <EventsList />
 </div>
 </template>
 <script>
-export default {
-  name: 'home',
-  components: {
+  import EventsList from '../components/EventsList';
+  export default {
+    name: 'home',
+    components: {
+      EventsList
+    }
   }
-}
 </script>
 <style lang="scss" scoped>
   .hero {  

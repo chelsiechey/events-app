@@ -17,12 +17,12 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import('./views/About.vue')
+      component: () => import('../views/About.vue')
     },
     {
       path: '/event/:id',
       name: 'eventSingle',
-      component: () => import('./views/EventSingle.vue'),
+      component: () => import('../views/EventSingle.vue'),
       beforeEnter: authGuard
     }
   ]
